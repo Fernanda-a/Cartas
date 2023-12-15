@@ -1,0 +1,83 @@
+/* Importação da fonte "Poppins" do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Definições gerais para todos os elementos HTML */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+/* Estilos para o corpo (body) da página */
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: #313131; /* Cor de fundo */
+	color: #fffffc; /* Texto em branco */
+}
+
+/* Estilos para o container */
+.container {
+	width: 420px;
+	background-color: transparent;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding: 30px 40px;
+	text-align: center; /* Alinhamento do conteúdo ao centro */
+	margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Estilos para o título h1 dentro do container */
+.container h1 {
+	font-size: 36px;
+	color: #a842ff; /* Cor do título */
+	margin-bottom: 20px;
+}
+
+/* Estilos para os campos de entrada de texto */
+.container label {
+	font-weight: bold;
+	display: block; /* Fazer com que as labels ocupem a largura total disponível */
+	margin-bottom: 10px;
+}
+
+.container input[type="text"],
+.container input[type="date"],
+.container textarea {
+	width: 100%;
+	height: 40px; /* Altura ajustada para melhorar o visual */
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	border-radius: 5px; /* Borda mais suave */
+	font-size: 16px;
+	color: #fffffc; /* Cor das letras */
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+/* Estilos para os botões */
+.container input[type="submit"] {
+	width: 100%;
+	height: 45px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fffffc; /* Cor das letras */
+	background-color: #ba75ff; /* Cor de fundo do botão */
+	transition: background-color 0.3s ease;
+}
+
+/* Estilos para o botão quando o mouse passa por cima */
+.container input[type="submit"]:hover {
+	background-color: #a842ff; /* Cor de destaque ao passar o mouse */
+}
+
